@@ -13,7 +13,7 @@ def create_sample_data(num_customers=1000, random_state=42):
     )
 
     ages = np.random.normal(45, 15, num_customers)
-    ages = np.clip(ages, 18, 80)
+    ages = np.clip(ages, 18, 80).astype(int)
 
     incomes = np.random.lognormal(10, 0.5, num_customers)
 

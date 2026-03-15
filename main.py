@@ -21,11 +21,11 @@ def main():
     print("Integrating data...")
     merged = integrate_data(demographics, transactions)
 
-    print("\nMerged Dataset Preview:")
-    print(merged.head())
-
     print("Cleaning data...")
     cleaned = clean_data(merged)
+
+    print("\nMerged Dataset Preview:")
+    print(merged.head())
 
     print("Engineering features...")
     final_df = engineer_features(cleaned)
